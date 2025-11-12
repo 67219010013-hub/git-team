@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ภูกระดึง — เที่ยวเลย แบบสวย ๆ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans Thai',sans-serif;margin:0;background:linear-gradient(180deg,#071426 0%, #071627 60%);color:#e6eef8;line-height:1.6}
+    .wrap{max-width:1100px;margin:36px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));border-radius:16px;padding:20px;box-shadow:0 8px 40px rgba(2,6,23,0.6);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
+    header.site{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    header .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800;color:#021124}
+    h1{margin:0;font-size:1.45rem}
+    .sub{color:var(--muted);font-size:.95rem}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    @media(min-width:900px){.hero{grid-template-columns:1fr 420px}}
+    .hero-left{position:relative;border-radius:12px;overflow:hidden}
+    .hero-left img{width:100%;height:100%;object-fit:cover;display:block;min-height:320px}
+    .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(3,7,18,0.0) 0%, rgba(2,6,23,0.7) 60%);padding:22px;display:flex;flex-direction:column;justify-content:flex-end}
+    .badge{display:inline-flex;padding:8px 12px;background:linear-gradient(90deg,#10b981, #06b6d4);color:#021124;border-radius:999px;font-weight:700}
+    .cta-row{display:flex;gap:10px;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--accent);color:#021124;font-weight:600;text-decoration:none}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .side{padding:18px}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    .meta{background:rgba(255,255,255,0.02);padding:10px;border-radius:10px}
+    .meta h4{margin:0;font-size:.85rem;color:#cfe8f5}
+    .meta p{margin:6px 0 0;color:var(--muted);font-size:.9rem}
+
+    .section{margin-top:18px}
+    .section h3{margin:0 0 8px 0}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .feature{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    .map{margin-top:12px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.04)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
+
+    /* small screens tweaks */
+    @media(max-width:480px){.gallery{grid-template-columns:repeat(2,1fr)}.meta-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="site">
+        <div class="brand">
+          <div class="logo">LK</div>
+          <div>
+            <h1>อุทยานแห่งชาติภูกระดึง</h1>
+            <div class="sub">จังหวัดเลย • ธรรมชาติ • ยอดภูเขา ลานหิน และจุดชมวิว</div>
+          </div>
+        </div>
+        <div>
+          <a class="btn" href="#book">จองทริป</a>
+        </div>
+      </header>
+
+      <main class="hero">
+        <div class="hero-left">
+          <img src="img/puka.jpg" alt="วิวภูกระดึง">
+          <div class="overlay">
+            <span class="badge">ยอดนิยม</span>
+            <h2 style="margin:8px 0 0; font-size:1.35rem">ผาชะนะได — จุดชมพระอาทิตย์ขึ้นที่งดงาม</h2>
+            <div class="cta-row">
+              <a class="btn" href="#map">ดูแผนที่</a>
+              <a class="btn secondary" href="#gallery">ชมภาพเพิ่มเติม</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side">
+          <div class="meta-grid">
+            <div class="meta"><h4>ความสูง</h4><p>ประมาณ 1,316 เมตร</p></div>
+            <div class="meta"><h4>พื้นที่</h4><p>ประมาณ 348 ตารางกิโลเมตร</p></div>
+            <div class="meta"><h4>เวลาที่แนะนำ</h4><p>พฤศจิกายน – กุมภาพันธ์</p></div>
+            <div class="meta"><h4>กิจกรรม</h4><p>เดินป่า, ถ่ายภาพ, กางเต็นท์</p></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="#tips">คำแนะนำการเที่ยว</a>
+          </div>
+        </aside>
+      </main>
+
+      <section class="section" id="about">
+        <h3>เกี่ยวกับภูกระดึง</h3>
+        <p style="color:var(--muted)">ภูกระดึงเป็นอุทยานแห่งชาติที่ขึ้นชื่อของประเทศไทย มีเส้นทางเดินเทรลที่ท้าทายและวิวบนยอดที่กว้างสุดลูกหูลูกตา เหมาะสำหรับผู้ที่ชอบธรรมชาติ ช่วงปลายปีอากาศเย็น และมีทิวทัศน์หมอกยามเช้าสวยงาม</p>
+
+        <div class="features">
+          <div class="feature"><strong>เวลาเดินขึ้น:</strong> ประมาณ 4–6 ชั่วโมง ขึ้นกับสภาพร่างกาย</div>
+          <div class="feature"><strong>ไฮไลท์:</strong> ผาชะนะได, ผาเหยียบเมฆ, น้ำตก</div>
+          <div class="feature"><strong>ระดับความยาก:</strong> กลาง-ยาก (ต้องเตรียมตัว)</div>
+          <div class="feature"><strong>เหมาะสำหรับ:</strong> นักผจญภัย, ช่างภาพ, ครอบครัวที่ชอบแคมป์</div>
+        </div>
+      </section>
+
+      <section class="section" id="tips">
+        <h3>คำแนะนำการเที่ยว</h3>
+        <ul style="color:var(--muted)">
+          <li>เตรียมรองเท้าเดินป่าคู่ใจ และอุปกรณ์กันหนาวสำหรับกลางคืน</li>
+          <li>จองที่พัก/เต็นท์ล่วงหน้า และเช็คช่วงปิดอุทยาน (ปกติ มิ.ย.–ก.ย.)</li>
+          <li>พกน้ำและอาหารพลังงานสูง ตลอดเส้นทางมีบางช่วงไม่มีร้านค้า</li>
+          <li>เคารพธรรมชาติ ไม่ทิ้งขยะ และปฏิบัติตามกฎอุทยาน</li>
+        </ul>
+      </section>
+
+      <section class="section" id="gallery">
+        <h3>แกลเลอรี</h3>
+        <div class="gallery">
+          <img src="img/p1.jpg" alt="">
+          <img src="img/p2.jpg" alt="">
+          <img src="img/p3.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="section" id="map">
+        <h3>ที่ตั้งบนแผนที่</h3>
+        <div class="map">
+          <!-- ตัวอย่าง iframe ของ Google Maps (เปลี่ยนเป็น embed จริงเมื่อใช้งาน) -->
+          <iframe src="https://www.google.com/maps?q=Phu+Kradueng+National+Park&output=embed" width="100%" height="320" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="section" id="book">
+        <h3>สนใจจองทริป?</h3>
+        <p style="color:var(--muted)">กรอกข้อมูลเพื่อให้เราแนะนำโปรแกรมทัวร์/ไกด์ท้องถิ่น (นี่เป็นแบบฟอร์มตัวอย่าง)</p>
+        <form style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+          <input placeholder="ชื่อ-นามสกุล" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <input placeholder="เบอร์ติดต่อ" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <input placeholder="วันที่ต้องการไป (DD/MM/YYYY)" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <select style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+            <option>จำนวนผู้เดินทาง: 1-2</option>
+            <option>3-5</option>
+            <option>6+ คน</option>
+          </select>
+          <textarea placeholder="ข้อความเพิ่มเติม" style="grid-column:1/3;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <button type="submit" class="btn" style="grid-column:1/3;justify-self:start">ส่งคำขอ</button>
+        </form>
+      </section>
+      <div style="text-align:center; margin-top:24px;">
+        <a class="btn" href="Food.html">ไปยังร้านอาหาร ›</a>
+      </div>
+
+      <footer>
+        ข้อมูลตัวอย่าง — ต้องการเปลี่ยนสี ฟอนต์ ภาพ หรือตั้งค่าเป็นภาษาอังกฤษแจ้งมาได้เลย
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
